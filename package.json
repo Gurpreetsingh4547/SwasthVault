@@ -9,7 +9,8 @@
     "test": "jest",
     "prepare": "husky install",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "auto-android": "./start-emulator-and-run.sh"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -21,6 +22,7 @@
     "@babel/eslint-parser": "^7.27.5",
     "@react-native/new-app-screen": "0.80.0",
     "@react-navigation/native": "^7.1.14",
+    "@react-navigation/native-stack": "^7.3.21",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "react": "19.1.0",
