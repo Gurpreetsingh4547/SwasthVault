@@ -6,7 +6,8 @@ import {
   SafeAreaView,
   KeyboardAvoidingView,
   Platform,
-  Alert
+  Alert,
+  Image
 } from 'react-native';
 
 // Context
@@ -16,6 +17,7 @@ import { useAuth } from '../contexts/AuthContext';
 import styles from './Styles/Login';
 import Input from '../components/Input';
 import Button from '../components/button';
+import { GetValueByPlatform } from '../services/Helper';
 
 /**
  * Login Screen Component
@@ -117,10 +119,17 @@ const LoginScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        behavior={GetValueByPlatform('padding', 'height')}
         style={styles.container}
       >
         <View style={styles.content}>
+          <View style={styles.logoContainer}>
+            <Image 
+              source={require('../assets/logo.png')} 
+              style={styles.logo} 
+              resizeMode="contain"
+            />
+          </View>
           <Text style={styles.title}>Login</Text>
           <Input
             label="Email"

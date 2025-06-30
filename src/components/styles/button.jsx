@@ -18,6 +18,6 @@ export default StyleSheet.create({
     text: {
         color: '#FFFFFF',
         fontSize: 16,
-        fontWeight: '600',
+        fontWeight: '700',
     }
 });

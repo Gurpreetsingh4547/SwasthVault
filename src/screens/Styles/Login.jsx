@@ -13,11 +13,30 @@ export default StyleSheet.create({
     padding: 20,
     justifyContent: 'center',
   },
+  logoContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 50,
+    width: '100%',
+    height: '10%',
+  },
+  logo: {
+    width: 250,
+    height: 250,
+    alignSelf: 'center',
+    resizeMode: 'contain',
+  },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
     color: '#333',
-    marginBottom: 30,
+    marginBottom: 25,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#666',
+    marginBottom: 25,
     textAlign: 'center',
   },
   forgotPassword: {
@@ -36,7 +55,7 @@ export default StyleSheet.create({
     fontSize: 16,
   },
   signUpLink: {
-    color: '#FF7A3D',
+    color: '#FA6E29',
     fontSize: 16,
     fontWeight: '600',
   },
