@@ -53,7 +53,7 @@ const SplashScreen = ({ navigation }) => {
     runAnimations();
 
     const timer = setTimeout(() => {
-      navigation.replace('Home');
+      navigation.replace('Login');
     }, SPLASH_SCREEN_DURATION);
 
     return () => clearTimeout(timer);
