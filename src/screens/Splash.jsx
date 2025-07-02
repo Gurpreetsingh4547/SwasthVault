@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 // Styles
-import styles from './Styles/Splash';
+import styles from './Styles/Splash.style';
 
 // Constants
 import { INITIAL_LOGO_SCALE, SPLASH_SCREEN_DURATION } from '../constants';

@@ -4,7 +4,7 @@ import React from 'react'
 import { View, Text, TextInput } from 'react-native'
 
 // Styles
-import styles from './styles/input'
+import styles from './styles/input.style'
 
 const Input = ({
     label = '',

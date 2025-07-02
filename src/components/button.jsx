@@ -4,7 +4,7 @@ import React from 'react';
 import { TouchableOpacity, Text, ActivityIndicator, View } from 'react-native';
 
 // Styles
-import styles from './styles/button';
+import styles from './styles/button.style';
 
 /**
  * Button component
@@ -13,13 +13,14 @@ import styles from './styles/button';
  * @param {boolean} props.isLoading - Loading state
  * @param {string} props.type - Button type (ghost, primary)
  * @param {string} props.text - Button text
+ * @param {Object} props.externalStyle - External style object
  * @returns {JSX.Element} - Button component
  */
-const Button = ({ handleClick = () => { }, isLoading = false, type = 'primary', text = '' }) => {
+const Button = ({ handleClick = () => { }, isLoading = false, type = 'primary', text = '', externalStyle = {} }) => {
     return (
         <View>
             <TouchableOpacity
-                style={styles[type]}
+                style={[styles[type], externalStyle]}
                 onPress={handleClick}
                 disabled={isLoading}
             >

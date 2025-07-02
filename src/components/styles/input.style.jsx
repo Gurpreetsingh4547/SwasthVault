@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     inputSection: {
         marginBottom: 20,
+        width: '100%',
     },
     inputLabel: {
         fontSize: 16,

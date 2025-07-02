@@ -14,9 +14,11 @@ import {
 import { useAuth } from '../contexts/AuthContext';
 
 // Styles
-import styles from './Styles/Login';
+import styles from './Styles/Login.style';
 import Input from '../components/Input';
 import Button from '../components/button';
+
+// Services
 import { GetValueByPlatform } from '../services/Helper';
 
 /**
