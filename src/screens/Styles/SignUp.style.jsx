@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: '#FFFFFF',
@@ -30,7 +30,7 @@ export default StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     color: '#333',
-    marginBottom: 25,
+    marginBottom: 10,
     textAlign: 'center',
   },
   subtitle: {
@@ -39,11 +39,8 @@ export default StyleSheet.create({
     marginBottom: 25,
     textAlign: 'center',
   },
-  forgotPassword: {
-    textAlign: 'right',
-    color: '#666',
-    marginTop: 5,
-    marginBottom: 25,
+  button: {
+    marginVertical: 15,
   },
   loginPrompt: {
     flexDirection: 'row',
@@ -59,28 +56,110 @@ export default StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
-  bottomNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    borderTopWidth: 1,
-    borderTopColor: '#E0E0E0',
-    paddingVertical: 15,
+  backButton: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    padding: 10,
   },
-  navItem: {
+  backButtonText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  inputLabel: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#333',
+    marginBottom: 8,
+  },
+  genderContainer: {
+    flexDirection: 'row',
+    marginBottom: 20,
+    gap: 15,
+  },
+  genderOption: {
+    flex: 1,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    borderRadius: 8,
     alignItems: 'center',
   },
-  navText: {
-    fontSize: 14,
-    color: '#666',
+  genderOptionSelected: {
+    borderColor: '#FA6E29',
+    backgroundColor: 'rgba(250, 110, 41, 0.1)',
   },
-  multiInputs: {
+  genderText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  genderTextSelected: {
+    color: '#FA6E29',
+    fontWeight: '500',
+  },
+  errorText: {
+    color: '#FF3B30',
+    fontSize: 12,
+    marginTop: -15,
+    marginBottom: 15,
+  },
+  inputSection: {
+    marginBottom: 20,
+  },
+  selectContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    gap: 15,
-    width: '100%',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    borderRadius: 8,
+    paddingHorizontal: 15,
+    paddingVertical: 12,
   },
-  multiInputItem: {
+  selectText: {
+    color: '#999',
+    fontSize: 16,
+  },
+  selectArrow: {
+    color: '#999',
+    fontSize: 12,
+  },
+  buttonGroup: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 15,
+  },
+  skipButton: {
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+  },
+  skipButtonText: {
+    fontSize: 16,
+    color: '#666',
+  },
+  nextButton: {
     flex: 1,
+    marginLeft: 15,
+  },
+  successContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  successIconContainer: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    backgroundColor: '#FA6E29',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 30,
+  },
+  successIcon: {
+    fontSize: 50,
+    color: '#FFFFFF',
   },
 });
+
+export default styles;

@@ -3,14 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "prepare": "husky install",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "auto-android": "./start-emulator-and-run.sh"
+    "android": "./start-emulator-android.sh",
+    "ios": "./start-emulator-ios.sh"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -28,12 +27,15 @@
     "lint-staged": "^16.1.2",
     "react": "19.1.0",
     "react-native": "0.80.0",
+    "react-native-date-picker": "^5.0.13",
+    "react-native-element-dropdown": "^2.12.4",
     "react-native-gesture-handler": "^2.26.0",
     "react-native-get-random-values": "^1.11.0",
     "react-native-reanimated": "^3.18.0",
     "react-native-safe-area-context": "^5.5.0",
     "react-native-screens": "^4.11.1",
-    "react-native-svg": "^15.12.0"
+    "react-native-svg": "^15.12.0",
+    "react-native-vector-icons": "^10.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
